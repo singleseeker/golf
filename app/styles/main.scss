@@ -1,0 +1,114 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@mixin box-shadow($horizontal: 2px, $vertical: 6px, $blur: 10px, $color: #CCC) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+
+@mixin btn_golf($origin:#2dabf9, $hover:#0688fa ) {
+	background-color:$origin;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:18px;
+	width: 100%;
+	padding: 10px;
+	text-decoration:none;
+	text-align: center;
+
+	&:hover {
+		text-decoration:none;
+		background-color:$hover;
+		color:#ffffff;
+	};
+}
+
+
+body {
+	background: #f2f2f2;
+	color: #4c4c4c;
+}
+
+.index-say-hello {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+// common box
+
+.golf_box_wrap { padding:0 20px; }
+.golf_box {
+	
+	@include box-shadow(2px,2px,10px,#ccc); 
+	background: #fff;
+	padding: 0;
+	border-radius: 4px;
+
+	.golf_box_title {
+		/*border-bottom: 2px solid #ccc;*/
+		line-height: 50px;
+		margin: 0;
+		font-size: 22px;
+		@include box-shadow(2px,2px,10px,#ccc);
+	}
+	.box_content {
+		li {
+	
+			line-height: 45px;
+			font-size: 20px;
+			padding: 0 15px;
+			border-bottom: 1px solid #ccc;
+
+			.glyphicon {
+				line-height: 55px;
+			}
+		}
+	}
+
+	a {
+		color: #4c4c4c;
+		text-decoration: none;
+	}
+}
+
+.golf_box_blue {
+
+}
+
+.golf_box_green {
+	.golf_box_title {
+		border-bottom: 2px solid #89cb41;
+	}
+}
+
+.golf_box_pink {
+
+}
+
+// common button
+.golf_btn_wrap { padding: 0; margin: 10px 0; }
+.golf_btn {}
+.golf_btn_green {
+	@include btn_golf(#89cb41, #666633);
+}
+
+// user avatar
+.golf_avatar {
+	
+	@include box-shadow; 
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 15px auto;
+	border-radius: 10px;
+
+}
+
