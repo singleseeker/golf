@@ -103,7 +103,9 @@ body {
 }
 
 .golf_box_pink {
-
+	.golf_box_title {
+		border-bottom: 2px solid #e75b8d;
+	}
 }
 
 // common button
@@ -111,6 +113,10 @@ body {
 .golf_btn {}
 .golf_btn_green {
 	@include btn_golf(#89cb41, #666633);
+}
+
+.golf_btn_pink {
+	@include btn_golf(#e75b8d, #993366);
 }
 
 // user avatar
