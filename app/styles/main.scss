@@ -72,6 +72,10 @@ body {
 				line-height: 30px;
 			}
 		}
+
+		.no-boder {
+			border: none 0;
+		}
 	}
 
 	a {
@@ -89,6 +93,12 @@ body {
 .golf_box_green {
 	.golf_box_title {
 		border-bottom: 2px solid #89cb41;
+	}
+}
+
+.golf_box_orange {
+	.golf_box_title {
+		border-bottom: 2px solid #f4b400;
 	}
 }
 
