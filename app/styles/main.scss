@@ -63,13 +63,13 @@ body {
 	.box_content {
 		li {
 	
-			line-height: 45px;
-			font-size: 20px;
-			padding: 0 15px;
+			line-height: 30px;
+			font-size: 17px;
+			padding: 10px 15px;
 			border-bottom: 1px solid #ccc;
 
 			.glyphicon {
-				line-height: 55px;
+				line-height: 30px;
 			}
 		}
 	}
@@ -120,5 +120,11 @@ body {
 	height: 25px;
 	@include box-shadow; 
 	border-radius: 5px;
+}
+
+.list-qr-code {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
 }
 
