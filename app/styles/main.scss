@@ -38,6 +38,11 @@ body {
 	padding-top: 20px;
 }
 
+.btn {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
 .index-say-hello {
 	font-size: 25px;
 	margin-bottom: 20px;
@@ -160,6 +165,8 @@ body {
 /* add padding  */
 .left-addon input  { padding-left:  30px; }
 .right-addon input { padding-right: 30px; }
+
+.box_content textarea { margin: 10px auto 10px; width: 95%; }
 
 // user avatar
 .golf_avatar {
