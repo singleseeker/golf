@@ -25,41 +25,41 @@
     <![endif]-->
 
     <div class="container-fluid">
-      <form>
+      <form role="form" data-toggle="validator">
       <div class="row golf_box_wrap">
         <div class="col-md-12 golf_box golf_box_green">
           <h3 class="golf_box_title text-left">发起球队</h3>
 
           <div class="box_content form-group-wrap">
               
-              <div class="form-group has-error">
+              <div class="form-group ">
                 <label for="exampleInputEmail1">球队名称<strong class="text-danger">*</strong></label>
                 
                 <div class="inner-addon right-addon">
                     <i class="glyphicon glyphicon-user text-flag"></i>
-                    <input type="text" class="form-control" placeholder="被队员熟知的球队名称"/>
-                    <span class="help-block text-danger">请填写您的球队名称</span>
+                    <input type="text" class="form-control" placeholder="被队员熟知的球队名称" required data-error="请填写您的球队名称"/>
+                    <span class="help-block with-errors text-danger"></span>
                 </div>
 
               </div>
 
-              <div class="form-group has-error">
+              <div class="form-group">
                 <label for="exampleInputEmail1">您在队中的名字<strong class="text-danger">*</strong></label>
                 
                 <div class="inner-addon right-addon">
                     <i class="glyphicon glyphicon-list-alt text-success"></i>
-                    <input type="text" class="form-control" value="彤Bao"/>
-                    <span class="help-block text-danger">请填写您在队中的名字</span>
+                    <input type="text" class="form-control" value="彤Bao" placeholder="队中的名字" required data-error="请填写您在队中的名字"/>
+                    <span class="help-block with-errors text-danger"></span>
                 </div>
               </div>
 
-              <div class="form-group has-error">
+              <div class="form-group">
                 <label for="exampleInputEmail1">手机号码<strong class="text-danger">*</strong></label>
                 
                 <div class="inner-addon right-addon">
                     <i class="glyphicon glyphicon-phone text-success"></i>
-                    <input type="text" class="form-control"  placeholder="您在管家APP中注册使用的手机号码"/>
-                    <span class="help-block text-danger">请填写合法的手机号</span>
+                    <input type="text" class="form-control"  placeholder="您在管家APP中注册使用的手机号码" pattern="^((13[0-9])|(15[^4,\d])|(18[0,5-9]))\d{8}$" data-error="请填写合法的手机号"/>
+                    <span class="help-block with-errors text-danger"></span>
                 </div>
 
               </div>
@@ -83,6 +83,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+     <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
