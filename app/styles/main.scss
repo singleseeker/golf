@@ -38,6 +38,11 @@ body {
 	padding-top: 20px;
 }
 
+.list-unstyled>li>a {
+	overflow: hidden;
+	display: block;
+}
+
 .btn {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
